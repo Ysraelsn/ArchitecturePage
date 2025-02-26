@@ -24,6 +24,7 @@ h1,
 h2,
 h3 {
   font-weight: 900;
+  line-height: 1;
   margin: 1rem 0 4rem 0;
 }
 h1 {
@@ -178,4 +179,31 @@ img {
 .slogan p {
   margin: 0;
   line-height: 1;
+}
+/**About Us**/
+.about {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  background-image: url(../img/nosotros.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
+@media (min-width: 992px) {
+  .about {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.about-content {
+  background-color: var(--white);
+  padding: 5rem;
+}
+@media (min-width: 992px) {
+  .about-content {
+    grid-column: 2/4;
+  }
+}
+.about-content h2 {
+}
+.about-content p {
+  margin-bottom: 1rem;
 }
